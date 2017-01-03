@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-03T14:50:52Z" product-name="catalogue_brawh">
+		<header/>
+		<body>
+			<trans-unit id="valeur.description">
+				<source>valeur</source>
+			</trans-unit>
+			<trans-unit id="caracteristic.description">
+				<source>caracteristic</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

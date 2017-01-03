@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-03T14:50:52Z" product-name="catalogue_brawh">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="release_date.description">
+				<source>releaseDate</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="price.description">
+				<source>price</source>
+			</trans-unit>
+			<trans-unit id="pictures.description">
+				<source>pictures</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+			<trans-unit id="seller.description">
+				<source>seller</source>
+			</trans-unit>
+			<trans-unit id="caracteristics.description">
+				<source>caracteristics</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

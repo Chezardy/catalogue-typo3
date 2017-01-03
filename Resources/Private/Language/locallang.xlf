@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-03T14:50:52Z" product-name="catalogue_brawh">
+		<header/>
+		<body>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product">
+				<source>Product</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.release_date">
+				<source>Release Date</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.price">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.pictures">
+				<source>Pictures</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.seller">
+				<source>Seller</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_product.caracteristics">
+				<source>Caracteristics</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_category.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_category.picture">
+				<source>Picture</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_category.parent">
+				<source>Parent</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_seller">
+				<source>Seller</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_seller.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_seller.website">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_seller.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_seller.phone_number">
+				<source>Phone Number</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_caracteristic">
+				<source>Caracteristic</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_caracteristic.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_caracteristicvalue">
+				<source>Caracteristic Value</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_caracteristicvalue.valeur">
+				<source>Valeur</source>
+			</trans-unit>
+			<trans-unit id="tx_cataloguebrawh_domain_model_caracteristicvalue.caracteristic">
+				<source>Caracteristic</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

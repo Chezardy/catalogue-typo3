@@ -1,0 +1,43 @@
+
+<table class="tx-catalogue-brawh" >
+	<tr>
+		<td>
+			<f:translate key="tx_cataloguebrawh_domain_model_product.name" />
+		</td>
+		<td>
+		{product.name}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_cataloguebrawh_domain_model_product.release_date" />
+		</td>
+		<td>
+		{product.releaseDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_cataloguebrawh_domain_model_product.description" />
+		</td>
+		<td>
+		{product.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_cataloguebrawh_domain_model_product.price" />
+		</td>
+		<td>
+		{product.price}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_cataloguebrawh_domain_model_product.pictures" />
+		</td>
+		<td>
+				<f:image src="{product.pictures.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>

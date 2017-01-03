@@ -1,0 +1,40 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Category list</numIndex>
+										<numIndex index="1">Category->list;Category->show;Product->show</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Seller list</numIndex>
+										<numIndex index="1">Seller->list;Seller->show</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">All products</numIndex>
+										<numIndex index="1">Product->list</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">Products Ascent</numIndex>
+										<numIndex index="1">Product->focus</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
