@@ -30,7 +30,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<tr>
 			<td><f:link.action action="show" arguments="{category : category}"> {category.name}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{category : category}"> {category.description}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{category : category}"> {category.picture.originalResource.name}</f:link.action></td>
+
+			<f:if condition="category.picture">
+			<td><f:image src={category.picture.originalResource.name}/></td>
+			</f:if>
+
 			<td><f:link.action action="edit" arguments="{category : category}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{category : category}">Delete</f:link.action></td>
 		</tr>
