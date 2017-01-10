@@ -66,4 +66,5 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $this->view->assign('category', $category);
     }
 
+
 }

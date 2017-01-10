@@ -13,30 +13,16 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Product</h1>
-
 <f:flashMessages />
 
-<table  class="tx_cataloguebrawh" >
-	<tr>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_product.name" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_product.release_date" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_product.description" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_product.price" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_product.pictures" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
-
+<div class="jumbotron">
 	<f:for each="{products}" as="product">
 		<tr>
-			<td><f:link.action action="show" arguments="{product : product}"> {product.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{product : product}"> {product.releaseDate -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{product : product}"> {product.description}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{product : product}"> {product.price}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{product : product}"> {product.pictures.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{product : product}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{product : product}">Delete</f:link.action></td>
+			<f:link.action action="show" arguments="{product : product}"> {product.name}</f:link.action>
+			<f:link.action action="show" arguments="{product : product}"> {product.releaseDate -> f:format.date()}</f:link.action>
+			<f:link.action action="show" arguments="{product : product}"> {product.description}</f:link.action>
+			<f:link.action action="show" arguments="{product : product}"> {product.price}</f:link.action>
+			<f:link.action action="show" arguments="{product : product}"> {product.pictures.originalResource.name}</f:link.action>
 		</tr>
 	</f:for>
 </table>
