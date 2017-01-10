@@ -13,19 +13,18 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
+<h1>Listing for Product</h1>
+
 <f:flashMessages />
-
-<div class="jumbotron">
 	<f:for each="{products}" as="product">
-		<tr>
-			<f:link.action action="show" arguments="{product : product}"> {product.name}</f:link.action>
-			<f:link.action action="show" arguments="{product : product}"> {product.releaseDate -> f:format.date()}</f:link.action>
-			<f:link.action action="show" arguments="{product : product}"> {product.description}</f:link.action>
-			<f:link.action action="show" arguments="{product : product}"> {product.price}</f:link.action>
-			<f:link.action action="show" arguments="{product : product}"> {product.pictures.originalResource.name}</f:link.action>
-		</tr>
+		<f:link.action action="show" arguments="{product : product}" pageUid="40"> 
+			<div class="jumbotron">
+					<div><f:translate key="tx_cataloguebrawh_domain_model_product.name" /> : {product.name}</div>
+					<div><f:translate key="tx_cataloguebrawh_domain_model_product.release_date" /> : {product.releaseDate -> f:format.date()}</div>
+					<div><f:translate key="tx_cataloguebrawh_domain_model_product.description" /> : {product.description}</div>
+					<div><f:translate key="tx_cataloguebrawh_domain_model_product.price" /> : {product.price}</div>
+					<div><f:translate key="tx_cataloguebrawh_domain_model_product.pictures" /> : <f:link.action action="show" arguments="{product : product}"> {product.pictures.originalResource.name}</f:link.action></div>
+			</div>
+		</f:link.action>
 	</f:for>
-</table>
-
-<f:link.action action="new">New Product</f:link.action>
 </f:section>
