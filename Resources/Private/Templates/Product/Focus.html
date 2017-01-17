@@ -1,0 +1,32 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Les produits des gens pauvres</h1>
+
+<f:flashMessages />
+	<f:for each="{products}" as="product">
+		<f:if condition="{product.price}<=10">
+			<f:link.action action="show" arguments="{product : product}" pageUid="55"> 
+				<div class="jumbotron">
+						<div><f:translate key="tx_cataloguebrawh_domain_model_product.name" /> : {product.name}</div>
+						<div><f:translate key="tx_cataloguebrawh_domain_model_product.release_date" /> : {product.releaseDate -> f:format.date()}</div>
+						<div><f:translate key="tx_cataloguebrawh_domain_model_product.description" /> : {product.description}</div>
+						<div><f:translate key="tx_cataloguebrawh_domain_model_product.price" /> : {product.price}</div>
+						<div><f:image src="{category.picture.originalResource.publicUrl}" width="200"/></div>
+				</div>
+			</f:link.action>
+		</f:if>
+	</f:for>
+</f:section>
