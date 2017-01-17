@@ -13,9 +13,16 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Product</h1>
 
 <f:flashMessages />
-<f:render partial="Product/Properties" arguments="{product:product}" />
-<f:link.action action="list">Back to list</f:link.action><br />
+<!-- <f:render partial="Product/Properties" arguments="{product:product}" /> -->
+<div class="jumbotron">
+		<h2>{product.name}</h2>
+	<div><f:image src="{product.pictures.originalResource.publicUrl}" width="200"/></div>
+	<div>Date d'ajout : {product.releaseDate -> f:format.date()}</div>
+	<div> Description : {product.description}</div>
+	<b>{product.price} €</b>
+</div>
+
+<f:link.action action="list">Retour à la liste</f:link.action><br />
 </f:section>
