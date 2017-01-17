@@ -13,31 +13,20 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Tout les vendeurs</h1>
+<h1>Tout les marchands</h1>
 
 <f:flashMessages />
 
-<table  class="tx_cataloguebrawh" >
-	<tr>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_seller.name" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_seller.website" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_seller.email" /></th>
-		<th><f:translate key="tx_cataloguebrawh_domain_model_seller.phone_number" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
 
 	<f:for each="{sellers}" as="seller">
-		<tr>
-			<td><f:link.action action="show" arguments="{seller : seller}"> {seller.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{seller : seller}"> {seller.website}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{seller : seller}"> {seller.email}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{seller : seller}"> {seller.phoneNumber}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{seller : seller}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{seller : seller}">Delete</f:link.action></td>
-		</tr>
+		<div class="jumbotron">
+				<f:link.action action="show" arguments="{seller : seller}"> 
+					<h2>{seller.name}</h2>
+				</f:link.action>
+				
+				<b>{seller.email}</b></br>
+				<b>{seller.phoneNumber}</b></br>
+		</div>
 	</f:for>
 </table>
-
-<f:link.action action="new">New Seller</f:link.action>
 </f:section>
