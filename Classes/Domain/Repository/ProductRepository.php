@@ -35,6 +35,10 @@ namespace Brawh\CatalogueBrawh\Domain\Repository;
  */
 class ProductRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-
+	public function findFocus(\catalogue_brawh\Classes\Domain\Model\Product $product){
+		$query = $this->createQuery();
+		$query->matching($query->lessThan(10, $product->price));
+		return $query->execute();
+	}
     
 }
