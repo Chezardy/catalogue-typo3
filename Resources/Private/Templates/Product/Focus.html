@@ -18,15 +18,13 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:flashMessages />
 	<f:for each="{products}" as="product">
 		<f:if condition="{product.price}<=10">
-			<f:link.action action="show" arguments="{product : product}" pageUid="55"> 
-				<div class="jumbotron">
-						<div><f:translate key="tx_cataloguebrawh_domain_model_product.name" /> : {product.name}</div>
-						<div><f:translate key="tx_cataloguebrawh_domain_model_product.release_date" /> : {product.releaseDate -> f:format.date()}</div>
-						<div><f:translate key="tx_cataloguebrawh_domain_model_product.description" /> : {product.description}</div>
-						<div><f:translate key="tx_cataloguebrawh_domain_model_product.price" /> : {product.price}</div>
-						<div><f:image src="{category.picture.originalResource.publicUrl}" width="200"/></div>
-				</div>
-			</f:link.action>
+			<div class="jumbotron">
+				<f:link.action action="show" arguments="{product : product}" pageUid="55"> 
+					<h2>{product.name}</h2>
+				</f:link.action>
+				<div><f:image src="{product.pictures.originalResource.publicUrl}" width="200"/></div>
+				<b>{product.price} €</b>
+			</div>
 		</f:if>
 	</f:for>
 </f:section>
