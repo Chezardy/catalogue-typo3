@@ -15,12 +15,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="main">
 
 <f:flashMessages />
-<!-- <f:render partial="Product/Properties" arguments="{product:product}" /> -->
 <div class="jumbotron">
 		<h2>{product.name}</h2>
 	<div><f:image src="{product.pictures.originalResource.publicUrl}" width="200"/></div>
 	<div>Date d'ajout : {product.releaseDate -> f:format.date()}</div>
-	<div> Description : {product.description}</div>
+	<div> Description : <f:format.html>{product.description}</f:format.html></div>
 	<b>{product.price} €</b>
 </div>
 
